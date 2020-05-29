@@ -7,7 +7,7 @@ import './index.styl'
 
 export default observer(function PHome () {
   return pug`
-    ScrollView.root
+    Div.root
       Content.content
         Div.main
           AddPost

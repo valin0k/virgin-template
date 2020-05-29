@@ -4,7 +4,7 @@ import './index.styl'
 import { Row, Div, Layout, SmartSidebar, Menu, Button, H1, Span } from '@startupjs/ui'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Topbar, Header } from 'main/components'
-import { ImageBackground } from 'react-native'
+import { ImageBackground, ScrollView } from 'react-native'
 import { BASE_URL } from 'clientHelpers'
 import { displayName } from '../../app.json'
 
@@ -38,13 +38,14 @@ export default observer(function ({ children }) {
         path=$opened.path()
         renderContent=renderSidebar
       )
-        Row.menu
-          Button(color='secondaryText' icon=faBars onPress=() => $opened.set(!opened))
-          H1.logo
-            Span.logoText(size='xl')= APP_NAME
-        ImageBackground.bg(source={uri: BASE_URL + '/background.png'})
-          Topbar
-          Header
-        Div.body= children
+        ScrollView.root
+          Row.menu
+            Button(color='secondaryText' icon=faBars onPress=() => $opened.set(!opened))
+            H1.logo
+              Span.logoText(size='xl')= APP_NAME
+          ImageBackground.bg(source={uri: BASE_URL + '/background.png'})
+            Topbar
+            Header
+          Div.body= children
   `
 })

@@ -14,6 +14,6 @@ export default observer(function AddPost () {
         Div.description
           Span.grayText To send a private suggestion email us at:
           Span.emailText CULTURE@VIRGINHOTELS.COM
-        Button POST
+        Button.button POST
   `
 })
