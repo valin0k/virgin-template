@@ -1,0 +1,45 @@
+[
+  {
+    "number": "15",
+    "title": "CLASSES",
+    "author": "Rebecca La Malfa",
+    "date": "over 3 years ago",
+    "text": "I think it would be amazing to offer Excel and other computer refresher classes",
+    "votes": "6",
+    "comments": [
+      {
+        "name": "Rebecca La Malfa",
+        "text": "Corey i will bake you what ever you want!",
+        "hash": "#Excelproblems",
+        "date": "over 3 years ago"
+      },
+      {
+        "name": "Clio Knowles",
+        "text": "Hi Rebecca, Great suggestion! We can definitely make this happen. We'll update you with further details... Thanks!",
+        "hash": "#Excelproblems",
+        "date": "over 3 years ago"
+      },
+      {
+        "name": "Corey Hartmann",
+        "text": "I'm willing to trade tutoring sessions for baked goods",
+        "date": "over 3 years ago"
+      }
+    ]
+  },
+  {
+    "number": "14",
+    "title": "VIRGIN HOTEL HOLIDAY COOKIE SWAP",
+    "author": "Rebecca La Malfa",
+    "date": "over 3 years ago",
+    "text": "Would anyone be interested in participating?",
+    "votes": "5"
+  },
+  {
+    "number": "13",
+    "title": "BEVERAGE STATION LIGHT",
+    "author": "Candice Jackson",
+    "date": "about 4 years ago",
+    "text": "The light on the beverage station seems to be left on at all times. I'm guessing this is true due to the fact that guest call at least 4 times a week asking how to turn it off. If this is true could we maybe leave the light off and they need it on they would call to find out how to turn it on because the switch is not easy to find. And it is usually in the middle of the night when they discover it and can't sleep. Just asking it seems that would serve the guest better.",
+    "votes": "5"
+  }
+]

@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { ScrollView } from 'react-native'
 import { Content, Div } from '@startupjs/ui'
-import { AddPost } from 'main/components'
+import { AddPost, Classes } from 'main/components'
 import './index.styl'
 
 export default observer(function PHome () {
@@ -11,6 +11,7 @@ export default observer(function PHome () {
       Content.content
         Div.main
           AddPost
+          Classes
           // ProductFilter
           // Products
         // Sidebar
