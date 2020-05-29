@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Dimensions } from 'react-native'
 import { observer } from 'startupjs'
-import { Div, Menu } from '@startupjs/ui'
+import { Div, Menu, Span } from '@startupjs/ui'
 import { BASE_URL } from 'clientHelpers'
 import './index.styl'
 
@@ -22,7 +22,8 @@ export default observer(function Logo () {
 
   return pug`
     Menu(variant='horizontal')
-      each item in MENU_ITEMS
-        MenuItem()=item
+      each item, i in MENU_ITEMS
+        MenuItem.item(styleName={first: !i} style={color:'#fff'} onPress=() => {})
+          Span.itemText=item
   `
 })
