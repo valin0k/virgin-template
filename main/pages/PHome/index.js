@@ -8,7 +8,7 @@ import './index.styl'
 export default observer(function PHome () {
   return pug`
     Div.root
-      Content.content
+      Content.content(width='desktop' )
         Div.main
           AddPost
           Classes

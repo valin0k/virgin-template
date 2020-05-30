@@ -9,6 +9,6 @@ export default observer(function Classes () {
   return pug`
     Div.root
       each classData, i in data
-        Class(...classData first=!i)
+        Class(...classData first=!i key=classData.number)
   `
 })

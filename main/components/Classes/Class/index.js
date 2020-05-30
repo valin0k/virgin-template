@@ -1,6 +1,9 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { H1, Div, Span, H4, H5 } from '@startupjs/ui'
+import { Image } from 'react-native'
+import { Comments } from 'main/components'
+import { H1, Div, Span, H4, H5, Button, Icon } from '@startupjs/ui'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import './index.styl'
 
 export default observer(function Class ({ number, title, author, date, text, votes, comments, first }) {
@@ -18,6 +21,13 @@ export default observer(function Class ({ number, title, author, date, text, vot
         Div.text
           Span.contentText=text
         Div.meta
+          Span.red(bold) ✓ 
+          Span VOTE: 
+          Span=votes
           
+        if comments
+          Comments(comments=comments)
+          // Icon(name='check')
+          // Button(icon='check' color='tomato' variant='text')
   `
 })
