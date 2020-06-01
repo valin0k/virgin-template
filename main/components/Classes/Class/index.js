@@ -3,7 +3,7 @@ import { observer } from 'startupjs'
 import { Image } from 'react-native'
 import { Comments } from 'main/components'
 import { H1, Div, Span, H4, H5, Button, Icon } from '@startupjs/ui'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
 export default observer(function Class ({ number, title, author, date, text, votes, comments, first }) {
@@ -19,10 +19,17 @@ export default observer(function Class ({ number, title, author, date, text, vot
           Span.dateText=date
         Div.text
           Span.contentText=text
-        Div.meta
-          Span.red(bold) ✓ 
-          Span.red VOTE: 
-          Span=votes
+        Div.metaWrapper
+          Div.meta(onPress=() => {})
+            Icon(icon=faCheck size='l' color='#cc0000')
+            Span.red VOTE: 
+            Span=votes
+          Div.icons
+            Div(onPress=() => {})
+              Icon(icon=faTimesCircle size='l' color='#cc0000')
+            Div.manage(onPress=() => {})
+              Icon(icon=faHeart size='l' color='#cc0000')
+              Span.red MANAGE
           
         Comments(comments=comments)
   `

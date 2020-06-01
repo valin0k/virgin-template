@@ -7,7 +7,7 @@ _darkGray = #6e6e6e
   margin-top 3u
   width 100%
 
-  &-first
+  &.first
     margin-top 0
 
 .number
@@ -31,6 +31,7 @@ _darkGray = #6e6e6e
   font-size 2u
 
 .red
+  margin-left 1u
   color _red
 
 .author
@@ -50,9 +51,21 @@ _darkGray = #6e6e6e
   color _darkGray
   line-height 3u
 
-.meta
-  padding 2u
+.metaWrapper
   flex-direction row
+  justify-content space-between
+  align-items flex-start
+  padding 2u
+
+.meta
+  flex-direction row
+
+.icons
+  flex-direction row
+
+.manage
+  flex-direction row
+  margin-left 2u
 
 .titleText
   font-size 2.5u

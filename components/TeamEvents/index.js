@@ -21,7 +21,7 @@ export default observer(function TeamEvents () {
             Span.dayText=item.day
             Span.dayText=item.month
             Span.dateText=item.date
-          Div.right
+          Div.rightF
             Span.titleText=item.title
             Span.grayText FDR
             Span.grayText=item.time
