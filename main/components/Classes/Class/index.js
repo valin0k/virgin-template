@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import './index.styl'
 
 export default observer(function Class ({ number, title, author, date, text, votes, comments, first }) {
-  console.info("__number__", number)
   return pug`
     Div.root(styleName={first})
       Div.number
@@ -22,12 +21,9 @@ export default observer(function Class ({ number, title, author, date, text, vot
           Span.contentText=text
         Div.meta
           Span.red(bold) ✓ 
-          Span VOTE: 
+          Span.red VOTE: 
           Span=votes
           
-        if comments
-          Comments(comments=comments)
-          // Icon(name='check')
-          // Button(icon='check' color='tomato' variant='text')
+        Comments(comments=comments)
   `
 })

@@ -18,8 +18,9 @@ export default observer(function Comments ({ avatar, name, text, hash, date, fir
           Span.text=text
           if hash
             Span.hashText=hash
-          Span.dateText=date
-        Hr
+        Span.dateText=date
+        Div.bottom
+          Hr
   `
 })
 

@@ -7,9 +7,7 @@ _lightGray = #ababab
   margin-top 2u
 
   &-first
-    padding 100
     margin-top 0
-    background greenyellow
 
 .avatar
   width 4u
@@ -18,24 +16,33 @@ _lightGray = #ababab
 
 .content
   margin-left 1u
-  flex-shrink initial
-//  flex-direction row
+  //flex-shrink initial
+  flex-shrink 1
+  width 100%
 
 .message
-
+  justify-content flex-start
+  align-items baseline
   +desktop()
     flex-direction row
-  //flex-shrink initial
 
 .nameText,
 .hashText
   color _red
 
+.hashText
+  +desktop()
+    margin-left 1u
+
 .text
+  margin-top 1u
   color _gray
+  line-height 2.5u
 
 .dateText
   color _lightGray
   font-size 1.5u
   margin-top 1u
 
+.bottom
+  margin-top 1u

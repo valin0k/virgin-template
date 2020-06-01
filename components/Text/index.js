@@ -3,7 +3,7 @@ import { observer } from 'startupjs'
 import { Span, H1, H2, H3, H4 } from '@startupjs/ui'
 import './index.styl'
 
-export default observer(function Text ({ type, white, red, subtitle, text, center, title, bold, justify, children }) {
+export default observer(function Text ({ type, white, red, gray, darkGray, text, center, bold, justify, children }) {
   const Component = useMemo(() => {
     switch (type) {
       case 'H1':

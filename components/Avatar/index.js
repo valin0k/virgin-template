@@ -6,12 +6,13 @@ import { BASE_URL } from 'clientHelpers'
 import { Text } from 'components'
 import './index.styl'
 
-export default observer(function Avatar () {
+export default observer(function Avatar ({ hideText, size = 'xxl'}) {
   return pug`
     Div.root
-      Div.text
-        Span.greeting HELLO
-        Span.name NIRAJ
-      User.user(avatarUrl=BASE_URL + '/avatar.jpg' size='xxl')
+      unless hideText
+        Div.text
+          Span.greeting HELLO
+          Span.name NIRAJ
+      User.user(avatarUrl=BASE_URL + '/avatar.jpg' size=size)
   `
 })
