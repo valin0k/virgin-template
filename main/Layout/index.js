@@ -47,6 +47,6 @@ export default observer(function ({ children }) {
             ImageBackground.bg(source={uri: BASE_URL + '/background.png'})
               Topbar
               Header
-            Div.body= children
+              =children
   `
 })

@@ -12,7 +12,7 @@ export default observer(function Class ({ number, title, author, date, text, vot
   return pug`
     Div.root(styleName={first})
       Div.number
-        H5=number
+        H5.numberText=number
       Div.item
         Div.title
           H5.titleText=title

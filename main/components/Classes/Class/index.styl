@@ -11,12 +11,22 @@ _darkGray = #6e6e6e
     margin-top 0
 
 .number
-  width 7u
-  height 7u
+  width 5u
+  height 5u
   justify-content center
   align-items center
   border 1px solid #0c0c0c
   border-radius 7u
+
+  +desktop()
+    width 7u
+    height 7u
+
+.numberText
+  font-size 2u
+
+  +desktop()
+    font-size 3u
 
 .item
   margin-left 2u
