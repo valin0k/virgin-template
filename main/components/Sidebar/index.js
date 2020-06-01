@@ -8,13 +8,13 @@ import './index.styl'
 export default observer(function Sidebar () {
   return pug`
     Div.root
-      Div.section(styleName={paddingBottom: true})
+      Div.section
         Graffiti
-      Div.section(styleName={gray: true, paddingBottom: true})
+      Div.section(styleName={gray: true})
         Icons
-      Div.section(styleName={darkGray: true})
+      Div.section(styleName={darkGray: true, noPaddingBottom: true})
         TeamEvents
-      Div.section(styleName={darkGray: true})
+      Div.section(styleName={darkGray: true, noPaddingBottom: true})
         HotelEvents
   `
 })
