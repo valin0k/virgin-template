@@ -19,15 +19,12 @@ export default observer(function HotelEvents () {
         H4.h2 HOTEL
         H3.h1 EVENTS
       each item, i in DATA
-        Div.item(key=item.title)
+        Div.item(key=item.title styleName={noBorder: DATA.length === i + 1})
           Div.left
             Image.image(source={uri: BASE_URL + '/events/' + i + '.jpg'})
           Div.right
             Span.titleText=item.title
             Span.grayText=item.text
             Span.grayText=item.date
-        Div.bottom
-        unless DATA.length === i + 1
-          Divider
   `
 })

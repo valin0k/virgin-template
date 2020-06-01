@@ -16,7 +16,7 @@ export default observer(function TeamEvents () {
         H4.h2 TEAMMATE
         H3.h1 EVENTS
       each item, i in DATA
-        Div.item(key=item.title)
+        Div.item(key=item.title styleName={noBorder: DATA.length === i + 1})
           Div.left
             Span.dayText=item.day
             Span.dayText=item.month
@@ -27,8 +27,5 @@ export default observer(function TeamEvents () {
             Span.grayText=item.time
           Div.icon(onPress=() => {})
             Icon(icon=faCaretDown size='l' color='#cc0000')
-        Div.bottom
-        unless DATA.length === i + 1
-          Divider
   `
 })
