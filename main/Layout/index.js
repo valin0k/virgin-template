@@ -1,8 +1,9 @@
 import React from 'react'
 import { observer, emit, useValue, useLocal } from 'startupjs'
 import './index.styl'
-import { Row, Div, Layout, SmartSidebar, Menu, Button, H1, Span } from '@startupjs/ui'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Row, Div, Layout, SmartSidebar, Menu, Button, H1, Span, Icon } from '@startupjs/ui'
+import { faBars, faCamera } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Topbar, Header } from 'main/components'
 import { ImageBackground, ScrollView, Image } from 'react-native'
 import { BASE_URL } from 'clientHelpers'
@@ -18,6 +19,8 @@ const MENU_ITEMS = [
   'TRIBE',
   'RESOURCES',
 ]
+
+const SOC_ICONS = [faFacebook, faCamera, faLinkedin, faTwitter]
 
 const MenuItem = observer(({ url, children }) => {
   const [currentUrl] = useLocal('$render.url')
@@ -42,7 +45,9 @@ export default observer(function ({ children }) {
             MenuItem(url='/')
               Span.menuItemText=item
         Div.social
-        
+          each icon in SOC_ICONS
+            Div.socIcon(onPress=() => {})
+              Icon(icon=icon size='l' color='#cc0000')
     `
   }
 
