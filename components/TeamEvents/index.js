@@ -21,11 +21,11 @@ export default observer(function TeamEvents () {
             Span.dayText=item.day
             Span.dayText=item.month
             Span.dateText=item.date
-          Div.rightF
+          Div.right
             Span.titleText=item.title
             Span.grayText FDR
             Span.grayText=item.time
-          Div.icon
+          Div.icon(onPress=() => {})
             Icon(icon=faCaretDown size='l' color='#cc0000')
         Div.bottom
         unless DATA.length === i + 1

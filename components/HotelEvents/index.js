@@ -16,7 +16,7 @@ export default observer(function HotelEvents () {
   return pug`
     Div.root
       Div.title
-        Span.h2 Hotel
+        Span.h2 HOTEL
         Span.h1 EVENTS
       each item, i in DATA
         Div.item(key=item.title)

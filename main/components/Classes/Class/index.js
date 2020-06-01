@@ -6,6 +6,8 @@ import { H1, Div, Span, H4, H5, Button, Icon } from '@startupjs/ui'
 import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
+const redColor = '#cc0000'
+
 export default observer(function Class ({ number, title, author, date, text, votes, comments, first }) {
   return pug`
     Div.root(styleName={first})
@@ -21,14 +23,14 @@ export default observer(function Class ({ number, title, author, date, text, vot
           Span.contentText=text
         Div.metaWrapper
           Div.meta(onPress=() => {})
-            Icon(icon=faCheck size='l' color='#cc0000')
+            Icon(icon=faCheck size='l' color=redColor)
             Span.red VOTE: 
             Span=votes
           Div.icons
             Div(onPress=() => {})
-              Icon(icon=faTimesCircle size='l' color='#cc0000')
+              Icon(icon=faTimesCircle size='l' color=redColor)
             Div.manage(onPress=() => {})
-              Icon(icon=faHeart size='l' color='#cc0000')
+              Icon(icon=faHeart size='l' color=redColor)
               Span.red MANAGE
           
         Comments(comments=comments)
