@@ -10,11 +10,11 @@ export default observer(function Sidebar () {
     Div.root
       Div.section(styleName={paddingBottom: true})
         Graffiti
-      Div.section(styleName={gray: true})
+      Div.section(styleName={gray: true, paddingBottom: true})
         Icons
-      Div.section(styleName={gray: true})
+      Div.section(styleName={darkGray: true})
         TeamEvents
-      Div.section(styleName={gray: true})
+      Div.section(styleName={darkGray: true})
         HotelEvents
   `
 })
