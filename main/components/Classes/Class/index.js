@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { Image } from 'react-native'
 import { Comments } from 'main/components'
-import { H1, Div, Span, H4, H5, Button, Icon } from '@startupjs/ui'
+import { Div, Span, H4, H5, Button, Icon } from '@startupjs/ui'
 import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
@@ -12,7 +12,7 @@ export default observer(function Class ({ number, title, author, date, text, vot
   return pug`
     Div.root(styleName={first})
       Div.number
-        H5.numberText=number
+        Span.numberText=number
       Div.item
         Div.title
           H5.titleText=title

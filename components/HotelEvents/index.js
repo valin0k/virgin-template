@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { BASE_URL } from 'clientHelpers'
 import { Image } from 'react-native'
-import { Div, Span, Icon, Divider, H3, H4 } from '@startupjs/ui'
+import { Div, Span, Icon, Divider, H3, H5 } from '@startupjs/ui'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
@@ -16,8 +16,8 @@ export default observer(function HotelEvents () {
   return pug`
     Div.root
       Div.title
-        H4.h2 HOTEL
-        H3.h1 EVENTS
+        H5.h5 HOTEL
+        H3.h3 EVENTS
       each item, i in DATA
         Div.item(key=item.title styleName={noBorder: DATA.length === i + 1})
           Div.left
