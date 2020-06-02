@@ -11,9 +11,9 @@ export default observer(function AddPost () {
       TextInput.titleInput(placeholder='Title of suggestion?')
       TextInput.textInput(placeholder='Make a suggestion' numberOfLines=4)
       Div.sendWrapper
+        Button.button(onPress=() => {}) POST
         Div.description
           Span.grayText To send a private suggestion email us at:
           Span.emailText CULTURE@VIRGINHOTELS.COM
-        Button.button(onPress=() => {}) POST
   `
 })
