@@ -46,8 +46,7 @@ export default observer(function ({ children }) {
               Span.menuItemText=item
         Div.social
           each icon in SOC_ICONS
-            Div.socIcon(onPress=() => {})
-              Icon(icon=icon size='l' color='#cc0000')
+            Button.socIcon(variant='text' icon=icon iconColor='#cc0000' onPress=() => {})
     `
   }
 
