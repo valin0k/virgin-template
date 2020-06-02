@@ -2,7 +2,7 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { Image } from 'react-native'
 import { Comments } from 'main/components'
-import { Div, Span, H4, H5, Button, Icon } from '@startupjs/ui'
+import { Div, Span, H4, H5, Button, Icon} from '@startupjs/ui'
 import { faCheck, faTimesCircle, faHeart } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
@@ -12,15 +12,15 @@ export default observer(function Class ({ number, title, author, date, text, vot
   return pug`
     Div.root(styleName={first})
       Div.number
-        Span.numberText=number
+        H5.numberText=number
       Div.item
         Div.title
           H5.titleText=title
         Div.author
-          Span.authorText=author
+          Span.authorText(size='l')=author
           Span.dateText=date
         Div.text
-          Span.contentText=text
+          Span.contentText(size='l')=text
         Div.metaWrapper
           Div.meta(onPress=() => {})
             Icon(icon=faCheck size='l' color=redColor)

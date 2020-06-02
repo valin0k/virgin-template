@@ -12,7 +12,7 @@ export default observer(function Avatar ({ hideText, size = 'xxl'}) {
       unless hideText
         Div.text
           Span.greeting HELLO
-          Span.name NIRAJ
+          Span.name(size='l') NIRAJ
       User.user(avatarUrl=BASE_URL + '/avatar.jpg' size=size)
   `
 })
