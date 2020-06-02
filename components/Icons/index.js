@@ -14,7 +14,7 @@ export default observer(function Icons () {
   return pug`
     Div.root
       each item in DATA
-        Div.item(onPress=() => {})
+        Div.item(onPress=() => {} key=item.text)
           Icon(icon=item.icon size='l' color='#cc0000')
           Span.text=item.text
   `

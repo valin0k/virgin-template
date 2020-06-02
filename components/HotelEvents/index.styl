@@ -22,8 +22,14 @@ _gray = #717171
 .item
   flex-direction row
   margin-top 3u
-  border-bottom 1px solid #d0d0d0
   padding-bottom 3u
+
+  +native()
+    border-bottom-width 1px
+    border-color #d0d0d0
+
+  +web()
+    border-bottom 1px solid #d0d0d0
 
   &.noBorder
     border-bottom none
