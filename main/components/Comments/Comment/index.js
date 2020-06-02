@@ -21,7 +21,7 @@ export default observer(function Comments ({ avatar, name, text, hash, date, fir
             Span.hashText=hash
         Div.manage(onPress=() => {})
           Icon(icon=faTimesCircle size='l' color=redColor)
-        Span.dateText=date
+        Span.dateText(size='s')=date
         Div.bottom
           Hr
   `
