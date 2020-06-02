@@ -4,7 +4,7 @@ import './index.styl'
 import { Row, Div, Layout, SmartSidebar, Menu, Button, H1, Span, Icon } from '@startupjs/ui'
 import { faBars, faCamera } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { Topbar, Header } from 'main/components'
+import { Topbar } from 'main/components'
 import { ImageBackground, ScrollView, Image } from 'react-native'
 import { BASE_URL } from 'clientHelpers'
 import { displayName } from '../../app.json'
@@ -66,7 +66,6 @@ export default observer(function ({ children }) {
                 Span.logoText(size='xl')= APP_NAME
             ImageBackground.bg(source={uri: BASE_URL + '/background.png'})
               Topbar
-              Header
               =children
   `
 })
