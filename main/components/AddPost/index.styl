@@ -30,8 +30,19 @@
 .sendWrapper
   margin-top 1u
 
+  +desktop()
+    flex-direction row
+    justify-content space-between
+
+.button
+  +desktop()
+    order 1
+
 .emailText
   margin-top 0.5u
 
 .description
   margin-top 2u
+  +desktop()
+    order 0
+    margin-top 0
