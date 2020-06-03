@@ -3,11 +3,26 @@ _red = #cc0000
 .root
   background #efefef
   flex-direction row
-  padding  2u 3u
+  padding  0 3u
 
 .tab
   margin-left 1u
-  color _red
+  position relative
+  padding 2u 1u
   &.first
     margin-left 0
+  &.active
+    background greenyellow
 
+.tabText
+  color _red
+
+.arrow
+  width 0
+  height 0
+  border-left 8px solid transparent
+  border-right 8px solid transparent
+  border-bottom 8px solid #fff
+  position absolute
+  bottom 0
+  left 30%
