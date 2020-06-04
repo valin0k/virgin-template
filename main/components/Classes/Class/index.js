@@ -24,14 +24,15 @@ export default observer(function Class ({ number, title, author, date, text, vot
         Div.metaWrapper
           Div.meta(onPress=() => {})
             Icon(icon=faCheck size='l' color=redColor)
-            Span.red VOTE: 
+            Span.voteText VOTE: 
             Span=votes
           Div.icons
             Div(onPress=() => {})
               Icon(icon=faTimesCircle size='l' color=redColor)
-            Div.manage(onPress=() => {})
+            Div.heart(onPress=() => {})
               Icon(icon=faHeart size='l' color=redColor)
-              Span.red MANAGE
+            Div.manage(onPress=() => {})
+              Span.redText MANAGE
           
         Comments(comments=comments)
   `

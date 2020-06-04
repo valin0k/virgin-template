@@ -6,7 +6,7 @@ import { BASE_URL } from 'clientHelpers'
 import { Text } from 'components'
 import './index.styl'
 
-export default observer(function Avatar ({ hideText, size = 'xxl'}) {
+export default observer(function Avatar ({ hideText, size = 'xl'}) {
   return pug`
     Div.root
       unless hideText
