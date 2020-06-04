@@ -18,7 +18,7 @@ export default observer(function Class ({ number, title, author, date, text, vot
           H5.titleText=title
         Div.author
           Span.authorText(size='l')=author
-          Span.dateText=date
+            Span.dateText=date
         Div.text
           Span.contentText(size='l')=text
         Div.metaWrapper
