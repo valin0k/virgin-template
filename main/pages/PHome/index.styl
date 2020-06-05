@@ -1,23 +1,25 @@
 .root
   margin-top 4u
   padding 0
-  //padding 2u 0
   flex 1
 
 .main
-  max-width 80u
+  width 100%
+
+  +desktop()
+    width 66.6%
 
 .content
+  max-width 150u
   +desktop()
     flex-direction row
 
 .title
-  //margin 5u 0
   margin-top 4u
   width 100%
 
   +desktop()
-    width 120u
+    max-width 150u
 
 .text
   color #ffffff
