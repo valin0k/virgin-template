@@ -1,6 +1,6 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { Div, Span, H3, H5, Icon, Divider } from '@startupjs/ui'
+import { Div, Span, H4, Icon, Divider } from '@startupjs/ui'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
@@ -13,8 +13,8 @@ export default observer(function TeamEvents () {
   return pug`
     Div.root
       Div.title
-        H5.h5 TEAMMATE
-        H3.h3 EVENTS
+        Span.h5 TEAMMATE
+        H4.h4 EVENTS
       each item, i in DATA
         Div.item(key=item.title styleName={noBorder: DATA.length === i + 1})
           Div.left
