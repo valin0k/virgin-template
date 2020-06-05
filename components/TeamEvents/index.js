@@ -1,6 +1,6 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { Div, Span, H4, Icon, Divider } from '@startupjs/ui'
+import { Div, Span, H4, Icon, Divider, Row } from '@startupjs/ui'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
@@ -16,7 +16,7 @@ export default observer(function TeamEvents () {
         Span.h5 TEAMMATE
         H4.h4 EVENTS
       each item, i in DATA
-        Div.item(key=item.title styleName={noBorder: DATA.length === i + 1})
+        Row.item(key=item.title styleName={noBorder: DATA.length === i + 1})
           Div.left
             Span.dayText=item.day
             Span.dayText=item.month
